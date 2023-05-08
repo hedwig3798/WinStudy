@@ -132,13 +132,16 @@
     <ClInclude Include="Core.h" />
     <ClInclude Include="define.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="Object.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="struct.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="WinStudy.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Core.cpp" />
+    <ClCompile Include="Object.cpp" />
     <ClCompile Include="pch.cpp" />
     <ClCompile Include="WinStudy.cpp" />
   </ItemGroup>
