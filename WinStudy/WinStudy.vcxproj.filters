@@ -25,6 +25,9 @@
     <Filter Include="Object">
       <UniqueIdentifier>{0bd3cf7c-a4af-4e67-a359-35a744574aa2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="TimeMg">
+      <UniqueIdentifier>{d4ae121c-5dd3-4906-87ac-7d22b25ed968}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -54,6 +57,9 @@
     <ClInclude Include="Object.h">
       <Filter>Object</Filter>
     </ClInclude>
+    <ClInclude Include="TimeMg.h">
+      <Filter>TimeMg</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinStudy.cpp">
@@ -67,6 +73,9 @@
     </ClCompile>
     <ClCompile Include="Object.cpp">
       <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeMg.cpp">
+      <Filter>TimeMg</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

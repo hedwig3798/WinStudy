@@ -17,3 +17,16 @@ Object::~Object()
 {
 
 }
+
+RECT Object::GetRect()
+{
+	vec2 _nowPos = GetPos();
+	vec2 _nowScale = GetScale();
+
+	RECT rt = {_nowPos.x - _nowScale.x / 2,
+				_nowPos.y - _nowScale.y / 2 ,
+				_nowPos.x + _nowScale.x / 2 ,
+				_nowPos.y + _nowScale.y / 2 };
+
+	return rt;
+}

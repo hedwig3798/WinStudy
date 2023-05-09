@@ -8,3 +8,5 @@
 					 private:\
 						type(); \
 						~type();
+
+#define DT TimeMg::GetInst()->GetDt()
