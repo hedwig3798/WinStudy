@@ -16,23 +16,32 @@
     <Filter Include="pch">
       <UniqueIdentifier>{e80f3ec8-97ff-42f3-ab9b-ca7fe4c85362}</UniqueIdentifier>
     </Filter>
-    <Filter Include="core">
-      <UniqueIdentifier>{4809f2e3-a93d-4e87-8c90-696b6be8394a}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header">
       <UniqueIdentifier>{64a15f70-2124-4d91-9007-8e8a590fb102}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Object">
-      <UniqueIdentifier>{0bd3cf7c-a4af-4e67-a359-35a744574aa2}</UniqueIdentifier>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{78d5c9b0-6ef1-491e-9db2-fc387b9c3ea7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Managers">
+    <Filter Include="Engine\core">
+      <UniqueIdentifier>{4809f2e3-a93d-4e87-8c90-696b6be8394a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Managers">
       <UniqueIdentifier>{8f23edbe-9fdc-42f6-8bc6-e559060baec2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Managers\TimeMg">
+    <Filter Include="Engine\Managers\TimeMg">
       <UniqueIdentifier>{d4ae121c-5dd3-4906-87ac-7d22b25ed968}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Managers\KeyMg">
+    <Filter Include="Engine\Managers\KeyMg">
       <UniqueIdentifier>{ca47a417-f2e9-4138-b700-bc693489cd1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\scene">
+      <UniqueIdentifier>{a658175d-0e8d-4287-9d1f-9fb8d461d328}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Object">
+      <UniqueIdentifier>{0bd3cf7c-a4af-4e67-a359-35a744574aa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Managers\SceneMg">
+      <UniqueIdentifier>{6b8a45ea-1a45-41f0-b518-9acc345fffa2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -52,7 +61,7 @@
       <Filter>pch</Filter>
     </ClInclude>
     <ClInclude Include="Core.h">
-      <Filter>core</Filter>
+      <Filter>Engine\core</Filter>
     </ClInclude>
     <ClInclude Include="define.h">
       <Filter>Header</Filter>
@@ -61,13 +70,19 @@
       <Filter>Header</Filter>
     </ClInclude>
     <ClInclude Include="Object.h">
-      <Filter>Object</Filter>
+      <Filter>Engine\Object</Filter>
     </ClInclude>
     <ClInclude Include="TimeMg.h">
-      <Filter>Managers\TimeMg</Filter>
+      <Filter>Engine\Managers\TimeMg</Filter>
     </ClInclude>
     <ClInclude Include="KeyMg.h">
-      <Filter>Managers\KeyMg</Filter>
+      <Filter>Engine\Managers\KeyMg</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Engine\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMg.h">
+      <Filter>Engine\Managers\SceneMg</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -78,16 +93,22 @@
       <Filter>pch</Filter>
     </ClCompile>
     <ClCompile Include="Core.cpp">
-      <Filter>core</Filter>
+      <Filter>Engine\core</Filter>
     </ClCompile>
     <ClCompile Include="Object.cpp">
-      <Filter>Object</Filter>
+      <Filter>Engine\Object</Filter>
     </ClCompile>
     <ClCompile Include="TimeMg.cpp">
-      <Filter>Managers\TimeMg</Filter>
+      <Filter>Engine\Managers\TimeMg</Filter>
     </ClCompile>
     <ClCompile Include="KeyMg.cpp">
-      <Filter>Managers\KeyMg</Filter>
+      <Filter>Engine\Managers\KeyMg</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Engine\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMg.cpp">
+      <Filter>Engine\Managers\SceneMg</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

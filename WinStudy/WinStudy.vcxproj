@@ -136,6 +136,8 @@
     <ClInclude Include="Object.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneMg.h" />
     <ClInclude Include="struct.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="TimeMg.h" />
@@ -146,6 +148,8 @@
     <ClCompile Include="KeyMg.cpp" />
     <ClCompile Include="Object.cpp" />
     <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneMg.cpp" />
     <ClCompile Include="TimeMg.cpp" />
     <ClCompile Include="WinStudy.cpp" />
   </ItemGroup>
