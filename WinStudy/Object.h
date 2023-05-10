@@ -3,29 +3,29 @@
 class Object
 {
 private:
-	vec2 m_pos;
-	vec2 m_scale;
+	Vec2 m_pos;
+	Vec2 m_scale;
 public:
-	vec2 GetPos() const
+	Vec2 GetPos() const
 	{
 		return m_pos;
 	}
-	void SetPos(vec2 _val)
+	void SetPos(Vec2 _val)
 	{
 		m_pos = _val;
 	}
 
-	vec2 GetScale() const
+	Vec2 GetScale() const
 	{
 		return m_scale;
 	}
-	void SetScale(vec2 _val)
+	void SetScale(Vec2 _val)
 	{
 		m_scale = _val;
 	}
 public:
 	Object();
-	Object(vec2 _pos, vec2 _scale);
+	Object(Vec2 _pos, Vec2 _scale);
 	~Object();
 	RECT GetRect();
 };

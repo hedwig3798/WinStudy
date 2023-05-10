@@ -18,3 +18,11 @@
 #define KEY_DOWN(key) KEY_CHECK(key, KEY_STATE::DOWN)
 #define KEY_NONE(key) KEY_CHECK(key, KEY_STATE::NONE)
 
+enum class GROUP_TYPE
+{
+	DEFAULT,
+	PLAYER,
+	MISSILE,
+	MONSTER,
+	END = 32,
+};

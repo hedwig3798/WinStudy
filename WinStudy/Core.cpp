@@ -28,7 +28,7 @@ void Core::Init(HWND _hWnd, POINT _size)
 	AdjustWindowRect(&rt, WS_OVERLAPPEDWINDOW, FALSE);
 
 	SetWindowPos(m_hWnd, NULL, 100, 100, rt.right - rt.left, rt.bottom - rt.top, 0);
-	m_obj = Object(vec2{ (int)(rt.right - rt.left) / 2, (int)(rt.bottom - rt.top) / 2 }, vec2{ 100, 100 });
+	m_obj = Object(Vec2{ (int)(rt.right - rt.left) / 2, (int)(rt.bottom - rt.top) / 2 }, Vec2{ 100, 100 });
 
 	// 더블 버퍼링
 	m_hDC = GetDC(_hWnd);
@@ -48,22 +48,22 @@ void Core::Update()
 {
 	if (KEY_HOLD(KEY::LEFT))
 	{
-		vec2 nowPos = m_obj.GetPos();
+		Vec2 nowPos = m_obj.GetPos();
 		m_obj.SetPos({ (nowPos.x - 100.0f * DT) , nowPos.y});
 	}
 	if (KEY_HOLD(KEY::RIGHT))
 	{
-		vec2 nowPos = m_obj.GetPos();
+		Vec2 nowPos = m_obj.GetPos();
 		m_obj.SetPos({ nowPos.x + 100.0f * DT, nowPos.y });
 	}
 	if (KEY_HOLD(KEY::UP))
 	{
-		vec2 nowPos = m_obj.GetPos();
+		Vec2 nowPos = m_obj.GetPos();
 		m_obj.SetPos({ nowPos.x , nowPos.y - 100.0f * DT });
 	}
 	if (KEY_HOLD(KEY::DOWN))
 	{
-		vec2 nowPos = m_obj.GetPos();
+		Vec2 nowPos = m_obj.GetPos();
 		m_obj.SetPos({ nowPos.x , nowPos.y + 100.0f * TimeMg::GetInst()->GetDt() });
 	}
 
