@@ -2,16 +2,17 @@
 #include "pch.h"
 #include "Object.h"
 #include "TimeMg.h"
+#include "KeyMg.h"
 class Core
 {
 	SINGLE(Core)
-
-public:
-	void Init(HWND _hWnd, POINT _size);
-	void Progress();
 private:
 	void Update();
 	void Rendering();
+public:
+	void Init(HWND _hWnd, POINT _size);
+	void Progress();
+
 
 private:
 	HWND m_hWnd;
