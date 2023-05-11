@@ -43,6 +43,9 @@
     <Filter Include="Engine\Managers\SceneMg">
       <UniqueIdentifier>{6b8a45ea-1a45-41f0-b518-9acc345fffa2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engine\scene\Start">
+      <UniqueIdentifier>{34ddf8a8-978b-4349-b2d8-634685c535d9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -84,6 +87,9 @@
     <ClInclude Include="SceneMg.h">
       <Filter>Engine\Managers\SceneMg</Filter>
     </ClInclude>
+    <ClInclude Include="SceneStart.h">
+      <Filter>Engine\scene\Start</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinStudy.cpp">
@@ -109,6 +115,9 @@
     </ClCompile>
     <ClCompile Include="SceneMg.cpp">
       <Filter>Engine\Managers\SceneMg</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneStart.cpp">
+      <Filter>Engine\scene\Start</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

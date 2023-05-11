@@ -23,10 +23,14 @@ public:
 	{
 		m_scale = _val;
 	}
+
+	void Update();
+	void Render(HDC _dc);
+
 public:
 	Object();
 	Object(Vec2 _pos, Vec2 _scale);
-	~Object();
+	virtual ~Object();
 	RECT GetRect();
 };
 
