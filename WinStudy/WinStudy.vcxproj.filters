@@ -46,6 +46,12 @@
     <Filter Include="Engine\scene\Start">
       <UniqueIdentifier>{34ddf8a8-978b-4349-b2d8-634685c535d9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engine\Object\Player">
+      <UniqueIdentifier>{c79efc0a-e072-4475-a912-30f25d7c6cad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Object\Monster">
+      <UniqueIdentifier>{4f414f18-e2e9-4000-8464-ae1f7a1126ba}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -90,6 +96,12 @@
     <ClInclude Include="SceneStart.h">
       <Filter>Engine\scene\Start</Filter>
     </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Engine\Object\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster.h">
+      <Filter>Engine\Object\Monster</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinStudy.cpp">
@@ -118,6 +130,12 @@
     </ClCompile>
     <ClCompile Include="SceneStart.cpp">
       <Filter>Engine\scene\Start</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Engine\Object\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster.cpp">
+      <Filter>Engine\Object\Monster</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

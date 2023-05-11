@@ -1,4 +1,6 @@
 #pragma once
+#include "KeyMg.h"
+#include "TimeMg.h"
 #include "pch.h"
 class Object
 {
@@ -24,8 +26,8 @@ public:
 		m_scale = _val;
 	}
 
-	void Update();
-	void Render(HDC _dc);
+	virtual void Update() = 0;
+	virtual void Render(HDC _dc) = 0;
 
 public:
 	Object();

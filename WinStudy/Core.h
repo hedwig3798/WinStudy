@@ -12,6 +12,14 @@ public:
 	void Progress();
 
 
+	POINT GetScreenSize() const
+	{
+		return m_screenSize;
+	}
+	void SetScreenSize(POINT val)
+	{
+		m_screenSize = val;
+	}
 private:
 	HWND m_hWnd;
 	HDC m_hDC;

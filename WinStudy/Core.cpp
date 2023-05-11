@@ -19,7 +19,7 @@ Core::~Core()
 void Core::Init(HWND _hWnd, POINT _size)
 {
 	m_hWnd = _hWnd;
-	m_screenSize = _size;
+	SetScreenSize(_size);
 
 
 	// 창 사각형 크기 조정
@@ -31,7 +31,7 @@ void Core::Init(HWND _hWnd, POINT _size)
 	// 더블 버퍼링
 	m_hDC = GetDC(_hWnd);
 
-	m_hBitmap = CreateCompatibleBitmap(m_hDC, m_screenSize.x, m_screenSize.y);
+	m_hBitmap = CreateCompatibleBitmap(m_hDC, GetScreenSize().x, GetScreenSize().y);
 	m_memDC = CreateCompatibleDC(m_hDC);
 
 	HBITMAP hOldBitmap = (HBITMAP)SelectObject(m_memDC, m_hBitmap);
@@ -49,9 +49,9 @@ void Core::Progress()
 	KeyMg::GetInst()->Update();
 	SceneMg::GetInst()->Update();
 
-	Rectangle(m_memDC, -1, -1, m_screenSize.x + 1, m_screenSize.y + 1);
+	Rectangle(m_memDC, -1, -1, GetScreenSize().x + 1, GetScreenSize().y + 1);
 
 	SceneMg::GetInst()->Render(m_hDC);
 
-	BitBlt(m_hDC, 0, 0, m_screenSize.x, m_screenSize.y, m_memDC, 0, 0, SRCCOPY);
+	BitBlt(m_hDC, 0, 0, GetScreenSize().x, GetScreenSize().y, m_memDC, 0, 0, SRCCOPY);
 }

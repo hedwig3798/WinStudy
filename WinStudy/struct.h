@@ -3,6 +3,13 @@ struct Vec2
 {
 	float x;
 	float y;
+
+public:
+	Vec2& operator = (POINT _pt)
+	{
+		x = (float)_pt.x;
+		y = (float)_pt.y;
+	}
 public:
 	Vec2()
 		: x(0.0f),
@@ -19,6 +26,12 @@ public:
 	Vec2(int _a, int _b)
 		:x((float)_a),
 		y((float)_b)
+	{
+	}
+
+	Vec2(const POINT& _pt)
+		:x((float)_pt.x),
+		y((float)_pt.y)
 	{
 	}
 };
