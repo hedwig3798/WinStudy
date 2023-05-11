@@ -13,5 +13,13 @@ public:
 	void Init();
 	void Update();
 	void Render(HDC _dc);
+	Scene* GetCurScene() const
+	{
+		return m_curScene;
+	}
+	void SetCurScene(Scene* val)
+	{
+		m_curScene = val;
+	}
 };
 

@@ -9,5 +9,8 @@ public:
 
     virtual void Update();
     virtual void Render(HDC _dc);
+
+private:
+	void CreateMissile();
 };
 

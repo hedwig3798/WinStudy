@@ -52,6 +52,18 @@
     <Filter Include="Engine\Object\Monster">
       <UniqueIdentifier>{4f414f18-e2e9-4000-8464-ae1f7a1126ba}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engine\Object\Missile">
+      <UniqueIdentifier>{3054689e-42b4-4f06-afaf-6b30eaf5af98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{1bcbacf1-b75b-4312-8e70-fe58c6ccdd63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\Texture">
+      <UniqueIdentifier>{cd253cb6-1be8-4689-b9b1-422cad9893fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\Sound">
+      <UniqueIdentifier>{2165c523-43a2-4243-9284-c0f79f9cd383}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -102,6 +114,18 @@
     <ClInclude Include="Monster.h">
       <Filter>Engine\Object\Monster</Filter>
     </ClInclude>
+    <ClInclude Include="Missile.h">
+      <Filter>Engine\Object\Missile</Filter>
+    </ClInclude>
+    <ClInclude Include="Res.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Resource\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound.h">
+      <Filter>Resource\Sound</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinStudy.cpp">
@@ -136,6 +160,18 @@
     </ClCompile>
     <ClCompile Include="Monster.cpp">
       <Filter>Engine\Object\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="Missile.cpp">
+      <Filter>Engine\Object\Missile</Filter>
+    </ClCompile>
+    <ClCompile Include="Res.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Resource\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound.cpp">
+      <Filter>Resource\Sound</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -19,7 +19,7 @@ void Monster::Update()
 	Vec2 curPos = GetPos();
 	curPos.x += m_speed * m_dir * DT;
 
-	float overDistence = abs(curPos.x - m_centerPos.x) - m_moveRange;
+	float overDistence = abs(curPos.x - m_centerPos.x) - GetMoveRange();
 
 	if (overDistence > 0.0f)
 	{

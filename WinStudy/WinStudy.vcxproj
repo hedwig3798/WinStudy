@@ -133,29 +133,37 @@
     <ClInclude Include="define.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="KeyMg.h" />
+    <ClInclude Include="Missile.h" />
     <ClInclude Include="Monster.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="Res.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SceneMg.h" />
     <ClInclude Include="SceneStart.h" />
+    <ClInclude Include="Sound.h" />
     <ClInclude Include="struct.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="Texture.h" />
     <ClInclude Include="TimeMg.h" />
     <ClInclude Include="WinStudy.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Core.cpp" />
     <ClCompile Include="KeyMg.cpp" />
+    <ClCompile Include="Missile.cpp" />
     <ClCompile Include="Monster.cpp" />
     <ClCompile Include="Object.cpp" />
     <ClCompile Include="pch.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Res.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="SceneMg.cpp" />
     <ClCompile Include="SceneStart.cpp" />
+    <ClCompile Include="Sound.cpp" />
+    <ClCompile Include="Texture.cpp" />
     <ClCompile Include="TimeMg.cpp" />
     <ClCompile Include="WinStudy.cpp" />
   </ItemGroup>

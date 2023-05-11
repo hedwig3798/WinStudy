@@ -27,7 +27,7 @@ public:
 	void Update();
 	void Render(HDC _dc);
 
-protected:
+public:
 	void AddObject(Object* _obj, GROUP_TYPE _type)
 	{
 		m_arrObject[(UINT)_type].push_back(_obj);

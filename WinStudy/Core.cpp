@@ -51,7 +51,7 @@ void Core::Progress()
 
 	Rectangle(m_memDC, -1, -1, GetScreenSize().x + 1, GetScreenSize().y + 1);
 
-	SceneMg::GetInst()->Render(m_hDC);
+	SceneMg::GetInst()->Render(m_memDC);
 
 	BitBlt(m_hDC, 0, 0, GetScreenSize().x, GetScreenSize().y, m_memDC, 0, 0, SRCCOPY);
 }

@@ -25,16 +25,16 @@ void SceneMg::Init()
 	m_arrScene[(UINT)SCENE_TYPE::START] = new SceneStart;
 	m_arrScene[(UINT)SCENE_TYPE::START]->SetSceneName(L"Start Scene");
 
-	m_curScene = m_arrScene[(UINT)SCENE_TYPE::START];
-	m_curScene->Enter();
+	SetCurScene(m_arrScene[(UINT)SCENE_TYPE::START]);
+	GetCurScene()->Enter();
 }
 
 void SceneMg::Update()
 {
-	m_curScene->Update();
+	GetCurScene()->Update();
 }
 
 void SceneMg::Render(HDC _dc)
 {
-	m_curScene->Render(_dc);
+	GetCurScene()->Render(_dc);
 }

@@ -22,17 +22,21 @@ void SceneStart::Enter()
 
 	Vec2 screenSize = Core::GetInst()->GetScreenSize();
 
-	float term = (screenSize.x - (75.0f * 2)) / 4;
+	int monsterCount = 20;
+	float movement = 25;
+	
+	float scale = 50;
+	float term = (screenSize.x - ((movement + scale / 2) * 2)) / (monsterCount - 1);
 	Monster* mobj = nullptr;
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < monsterCount; i++)
 	{
 		mobj = new Monster;
-		mobj->SetPos(Vec2{ 75 + term * i, 50.0f });
+		mobj->SetMoveRange(movement);
+		mobj->SetPos(Vec2{ (movement + scale / 2) + term * i, 50.0f });
 		mobj->SetScale(Vec2{ 50, 50 });
 		mobj->SetCenterPos(mobj->GetPos());
 		AddObject(mobj, GROUP_TYPE::MONSTER);
-	}
-	
+	}	
 }
 
 void SceneStart::Exit()

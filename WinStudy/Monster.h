@@ -14,6 +14,14 @@ public:
 	{
 		m_centerPos = val;
 	}
+	float GetMoveRange() const
+	{
+		return m_moveRange;
+	}
+	void SetMoveRange(float val)
+	{
+		m_moveRange = val;
+	}
 private:
 	float m_speed;
 	Vec2 m_centerPos;

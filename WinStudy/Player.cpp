@@ -1,5 +1,7 @@
 #include "Player.h"
-
+#include "Missile.h"
+#include "SceneMg.h"
+#include "Scene.h"
 Player::Player()
 {
 
@@ -29,7 +31,10 @@ void Player::Update()
 	{
 		curPos.x += 200.0f * DT;
 	}
-
+	if (KEY_DOWN(KEY::SPACE))
+	{
+		CreateMissile();
+	}
 	SetPos(curPos);
 }
 
@@ -39,4 +44,18 @@ void Player::Render(HDC _dc)
 	rt = GetRect();
 
 	Rectangle(_dc, rt.left, rt.top, rt.right, rt.bottom);
+}
+
+void Player::CreateMissile()
+{
+	Vec2 missilePos = GetPos();
+	missilePos.y -= 20;
+
+	Missile* missile = new Missile;
+	missile->SetPos(missilePos);
+	missile->SetScale(Vec2{ 25, 25 });
+	missile->SetDirection(-1);
+
+	Scene* curScene = SceneMg::GetInst()->GetCurScene();
+	curScene->AddObject(missile, GROUP_TYPE::MISSILE);
 }
